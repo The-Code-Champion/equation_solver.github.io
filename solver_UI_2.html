@@ -1,0 +1,22 @@
+<!DOCTYPE HTML> 
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+  <body>
+    <py-script>
+      import numpy as np
+      x = int(input('Enter value 1: '))
+      y = int(input('Enter value 1: '))
+      z = int(input('Enter value 1: '))
+      m = int(input('Enter value 1: '))
+      n = int(input('Enter value 1: '))
+      l = int(input('Enter value 1: '))
+      a = np.array([[x, y],[m, n]])
+      b = np.array([z, l])
+      value = np.linalg.solve(a,b)
+      print(value)
+    </py-script>
+  </body>
+</html>
